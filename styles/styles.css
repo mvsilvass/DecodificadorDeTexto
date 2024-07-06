@@ -1,0 +1,78 @@
+:root {
+    /* Colors */
+    --primary-color: #F9F5F6;
+    --secondary-color: #F8E8EE;
+    --tertiary-color: #FDCEDF;
+    --quaternary-color: #F2BED1;
+    --black-color: #000000;
+    --white-color: #F6F6F6;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: var(--black-color) ;
+}
+
+body{
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 5%;
+    width: 100%;
+}
+
+.input-text {
+    padding: 10px;
+    margin: 0 auto 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow .3s ease;
+    width: 100%;
+    resize: vertical;
+}
+
+.input-text:focus {
+    border: none;
+}
+
+.input-text:focus,
+.input-text:hover {
+    box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+}
+
+
+.footer-content{
+    background-color: var(--quaternary-color);
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 1%;
+    gap: 10px;
+}
+
+.footer-text{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
