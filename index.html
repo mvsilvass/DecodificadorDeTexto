@@ -6,42 +6,45 @@
     <title>Encriptador</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.png">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen" />
+    <script src="scripts/script.js"></script> <!-- Mova o script para o head -->
 </head>
 <body>
-    <header></header>
+    <header>
+       <h1>Encriptador</h1>
+    </header>
     <main>
         <section class="main-content">
-            <textarea type="text" class="input-text" id="input-text" placeholder="Digite seu texto..."></textarea> </textarea>
+            <textarea class="input-text" id="input-text" placeholder="Digite seu texto..."></textarea>
 
-            <div class="main-alert"> 
-                <img class = "main-alert-image" src="assets/exclamation-icon.png" alt="">
-                <p class="main-alert-text"> Apenas letras minúsculas e sem acento. </p>
+            <div class="main-alert">
+                <img class="main-alert-image" src="assets/exclamation-icon.png" alt="">
+                <p class="main-alert-text">Apenas letras minúsculas e sem acento.</p>
             </div>
 
             <div class="main-buttons">
-                <button>Criptografar</button>
-
-                <button>Descriptografar</button>
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
             </div>
-
         </section>
 
-      <section class="output">
-        <textarea type="text" class="output-text" id="output-text" placeholder="Digite seu texto..."></textarea> </textarea>
-        <button class="output-button">Copiar</button>
-      </section>
-
-    </main>   
-    <footer>    
+        <section class="main-output">
+            <aside>
+                <img src="assets/icon.png" alt="">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copiarTexto()">Copiar</button>
+            </aside>
+        </section>
+    </main>
+    <footer>
         <nav class="footer-content">
-            <p class="footer-text"> Desenvolvido por Maria Vitoria durante o programa "ONE - Oracle Next Education"</p>
+            <p class="footer-text">Desenvolvido por Maria Vitoria durante o programa "ONE - Oracle Next Education"</p>
             <div class="footer-icons">
-            <a href="https://github.com/mvsilvass"> 
-                    <img src="assets/github.png">
+                <a href="https://github.com/mvsilvass">
+                    <img src="assets/github.png" alt="">
                 </a>
-                
                 <a href="https://www.linkedin.com/in/maria-vitoria-silva-soares-b33a31304/">
-                    <img src="assets/linkedin.png">
+                    <img src="assets/linkedin.png" alt="">
                 </a>
             </div>
         </nav>
