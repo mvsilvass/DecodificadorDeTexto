@@ -6,6 +6,7 @@
     --quaternary-color: #F2BED1;
     --black-color: #000000;
     --white-color: #F6F6F6;
+    --gray-color: #ECE7E7;
 }
 
 * {
@@ -113,6 +114,7 @@ main {
 .footer-text {
     font-weight: bolder;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .footer-icons {
