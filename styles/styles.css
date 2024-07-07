@@ -31,7 +31,6 @@ header h1 {
     font-weight: bold;
     text-align: center;
     font-size: 4rem;
-    margin-top: 2%; 
 }
 
 main {
@@ -124,12 +123,11 @@ main {
     opacity: 0.5; 
 }
 
-.main-output-content h1 {
-    text-align: center;
-}
-
+.main-output-content h1,
 .main-output-content p {
     text-align: center;
+    opacity: 0.5;   
+    padding: 2%;
 }
 
 .footer-content {
@@ -156,17 +154,13 @@ main {
 }
 
 @media (max-width: 768px) {
-    .input-text, .main-output-content {
-        height: 40vh;
-        font-size: 0.9rem;
-    }
-
     .main-input-content, .main-output-content {
         margin: 5px;
         flex: 1 100%;
     }
 
-    button {
+    .main-buttons button {
+        width: 100%;
         padding: 2%;
     }
 
@@ -176,18 +170,19 @@ main {
 }
 
 @media (max-width: 480px) {
+    .main-input-content, .main-output-content {
+        flex: 1 100%;
+    }
+
     .input-text, .main-output-content {
         height: 30vh;
         font-size: 0.8rem;
     }
 
-    .main-input-content, .main-output-content {
-        flex: 1 100%;
-    }
-
-    button {
+    .main-buttons button {
         width: 100%;
         margin-bottom: 10px;
+        padding: 2%;
     }
 
     .footer-content {
