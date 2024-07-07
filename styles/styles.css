@@ -20,6 +20,8 @@
 
 body {
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -37,6 +39,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between; 
     align-items: stretch; 
+    flex: 1;
 }
 
 .main-input-content {
@@ -137,7 +140,7 @@ main {
     justify-content: center;
     padding: 1%;
     gap: 10px;
-    margin-top: 1.5%;
+    margin-top: auto;
 }
 
 .footer-text {
