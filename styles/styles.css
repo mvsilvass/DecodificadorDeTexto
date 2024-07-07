@@ -105,6 +105,8 @@ main {
     margin: 2%;
     margin-bottom: auto;
     border-radius: 10px; 
+    flex: 1;
+    margin-bottom: auto;
 }
 
 .main-output aside{
@@ -164,6 +166,10 @@ main {
     button {
         padding: 2%;
     }
+
+    .footer-content{
+        margin-top: 5%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -179,5 +185,9 @@ main {
     button {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .footer-content{
+        margin-top: 5%;
     }
 }
