@@ -60,9 +60,9 @@ main {
     outline: none;
     transition: box-shadow .3s ease;
     resize: none;
-    height: 50vh; 
+    height: 55vh; 
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .input-text:focus,
@@ -120,13 +120,20 @@ main {
 .main-output-content img { 
     width: 40%;
     height: auto;
-    opacity: 0.5; 
+    opacity: 0.6; 
 }
 
-.main-output-content h1,
+.main-output-content h2{
+    font-size: 1.9rem ;
+    text-align: center; 
+    padding: 2%;
+
+}
+
 .main-output-content p {
+    font-size: 1.2rem ;
     text-align: center;
-    opacity: 0.5;   
+    opacity: 0.6;   
     padding: 2%;
 }
 
