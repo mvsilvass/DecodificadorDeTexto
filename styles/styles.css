@@ -124,7 +124,7 @@ main {
 }
 
 .main-output-content h2{
-    font-size: 1.9rem ;
+    font-size: 1.8rem ;
     text-align: center; 
     padding: 2%;
 
@@ -132,8 +132,7 @@ main {
 
 .main-output-content p {
     font-size: 1.2rem ;
-    text-align: center;
-    opacity: 0.6;   
+    text-align: center;  
     padding: 2%;
 }
 
