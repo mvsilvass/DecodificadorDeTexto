@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (text === "") {
+            return;
+        }
+
         // Aplicando a criptografia
         text = text.replace(/e/g, "enter");
         text = text.replace(/i/g, "imes");
@@ -38,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (hasUppercase || hasAccentChars) {        
             alert("Apenas letras minúsculas sem acentos são permitidas.");
+            return;
+        }
+
+        if (text === "") {
             return;
         }
     
