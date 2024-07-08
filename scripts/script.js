@@ -4,13 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function criptografar() {
         let text = textArea.value;
-    
-        // Validando se há caracteres maiúsculos ou especiais
-        if (/[A-Z!@#$%^&*()_+{}\[\]:;"'<>,.?\/\\|áéíóúâêîôûãõàèìòùäëïöü]/i.test(text)) {
-            alert("Apenas letras minúsculas sem acentos ou caracteres especiais são permitidas.");
+
+        // Verificar se há letras maiúsculas
+        const hasUppercase = /[A-ZÀ-ÖØ-Ý]/.test(text);
+
+        // Verificar se há letras com acentos
+        const hasAccentChars = /[À-ÖØ-öø-ÿ]/.test(text);
+
+        if (hasUppercase || hasAccentChars) {
+            alert("Apenas letras minúsculas sem acentos são permitidas.");
             return;
         }
-    
+
         // Aplicando a criptografia
         text = text.replace(/e/g, "enter");
         text = text.replace(/i/g, "imes");
@@ -24,10 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function descriptografar() {
         let text = textArea.value;
-    
-        // Validando se há caracteres maiúsculos ou especiais
-        if (/[A-Z!@#$%^&*()_+{}\[\]:;"'<>,.?\/\\|áéíóúâêîôûãõàèìòùäëïöü]/i.test(text)) {
-            alert("Apenas letras minúsculas sem acentos ou caracteres especiais são permitidas.");
+
+        // Verificar se há letras maiúsculas
+        const hasUppercase = /[A-ZÀ-ÖØ-Ý]/.test(text);
+
+        // Verificar se há letras com acentos
+        const hasAccentChars = /[À-ÖØ-öø-ÿ]/.test(text);
+
+        if (hasUppercase || hasAccentChars) {        
+            alert("Apenas letras minúsculas sem acentos são permitidas.");
             return;
         }
     
