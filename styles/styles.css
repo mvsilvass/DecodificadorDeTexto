@@ -47,7 +47,7 @@ main {
     flex-direction: column;
     flex: 2; 
     min-width: 300px;
-    padding: 1%;
+    padding: 2%;
     gap: 5%;
     margin-bottom: auto;
 }
