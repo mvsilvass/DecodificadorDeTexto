@@ -68,6 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
         messageArea.style.display = 'none';
     }
 
+    copyButton.addEventListener('click', function () {
+        if (outputArea.value.length > 0) {
+            outputArea.select();
+            outputArea.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+        }
+    });
+
     window.criptografar = criptografar;
     window.descriptografar = descriptografar;
 });

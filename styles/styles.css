@@ -158,7 +158,7 @@ main {
 }
 
 .main-output-content img { 
-    width: 40%;
+    min-width: 40%;
     height: auto;
     opacity: 0.6; 
 }
@@ -167,7 +167,6 @@ main {
     font-size: 1.8rem ;
     text-align: center; 
     padding: 2%;
-
 }
 
 .main-output-content p {
