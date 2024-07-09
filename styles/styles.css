@@ -6,7 +6,8 @@
     --quaternary-color: #F2BED1;
     --black-color: #000000;
     --white-color: #F6F6F6;
-    --gray-color: #ECE7E7;
+
+    --focus-shadow: 0px 0px 13px 0px var(--quaternary-color);
 }
 
 * {
@@ -23,10 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: auto;
 }
 
 header h1 {
-    color: var(--black-color);
     text-shadow: 2px 2px 4px var(--quaternary-color); 
     font-weight: bold;
     text-align: center;
@@ -45,7 +46,6 @@ main {
     display: flex;
     flex-direction: column;
     flex: 2; 
-    margin: 1%;
     min-width: 300px;
     padding: 1%;
     gap: 5%;
@@ -67,7 +67,7 @@ main {
 
 .input-text:focus,
 .input-text:hover {
-    box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+    box-shadow: var(--focus-shadow);
 }
 
 .main-alert {
@@ -97,7 +97,7 @@ main {
     cursor: pointer;
 }
 
-.main-buttons button:hover {
+button:hover {
     background-color: var(--quaternary-color);
 }
 
@@ -114,13 +114,13 @@ main {
 
 .main-output-content:focus,
 .main-output-content:hover {
-    box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+    box-shadow: var(--focus-shadow);
 }
 
 .main-output-copy-content{
     display: none;  
     flex: 1;   
-    margin: 2%;
+    margin: 1%;
     flex-direction: column;
     gap: 10px;
 }
@@ -139,7 +139,7 @@ main {
 
 .output-text:focus,
 .output-text:hover {
-    box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+    box-shadow: var(--focus-shadow);
 }
 
 .copyButton {
@@ -153,10 +153,6 @@ main {
     cursor: pointer;
 }
 
-.copyButton:hover {
-    background-color: var(--quaternary-color);
-}
-
 .main-output-content img { 
     min-width: 40%;
     height: auto;
@@ -164,13 +160,13 @@ main {
 }
 
 .main-output-content h2{
-    font-size: 1.8rem ;
+    font-size: 1.5rem ;
     text-align: center; 
     padding: 2%;
 }
 
 .main-output-content p {
-    font-size: 1.2rem ;
+    font-size: 1rem ;
     text-align: center;  
     padding: 2%;
 }
