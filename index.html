@@ -14,7 +14,7 @@
     </header>
     <main>
         <section class="main-input-content">
-            <textarea class="input-text" id="input-text" placeholder="Digite seu texto..."></textarea>
+            <textarea class="input-text" id="input-text" placeholder="Digite seu texto..." spellcheck="false"></textarea>
 
             <div class="main-alert">
                 <img class="main-alert-image" src="assets/exclamation-icon.png" alt="">
@@ -27,11 +27,16 @@
             </div>
         </section>
 
-        <section class="main-output-content" id="result-text">
+        <section id="main-output-content" class="main-output-content">
             <img src="assets/icon.png" alt="">
 
             <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>   
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+
+        <section id="main-output-copy-content" class="main-output-copy-content">
+            <textarea id="output-text" class="output-text" readonly="true" spellcheck="false"></textarea>
+            <button id="copyButton" class="copyButton" onclick="copiar()">Copiar</button>
         </section>
     </main>
     <footer>

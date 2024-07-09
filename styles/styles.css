@@ -103,7 +103,6 @@ main {
 
 .main-output-content {
     background-color: var(--white-color);          
-    padding: 2%;
     margin: 2%;
     border-radius: 10px; 
     flex: 1;
@@ -116,6 +115,46 @@ main {
 .main-output-content:focus,
 .main-output-content:hover {
     box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+}
+
+.main-output-copy-content{
+    display: none;  
+    flex: 1;   
+    margin: 2%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.output-text {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    height: 72vh; 
+    outline: none;
+    font-size: 1.5rem;
+    padding: 2%;
+    cursor: default;
+}
+
+.output-text:focus,
+.output-text:hover {
+    box-shadow: 0px 0px 13px 0px var(--quaternary-color);
+}
+
+.copyButton {
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 1.5%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.copyButton:hover {
+    background-color: var(--quaternary-color);
 }
 
 .main-output-content img { 
